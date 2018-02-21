@@ -12,12 +12,16 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CollectionComponent } from './collection/collection.component';
+import { RatingCategoryPipe } from './pipes/rating-category.pipe';
+import { RatingComponent } from './rating/rating.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CollectionComponent
+    CollectionComponent,
+    RatingCategoryPipe,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
