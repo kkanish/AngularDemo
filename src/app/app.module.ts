@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
 import { CollectionComponent } from './collection/collection.component';
 import { RatingCategoryPipe } from './pipes/rating-category.pipe';
 import { RatingComponent } from './rating/rating.component';
-
+import  {DataService} from './services/data.service'
 
 @NgModule({
   declarations: [
@@ -39,7 +39,7 @@ import { RatingComponent } from './rating/rating.component';
     BrowserAnimationsModule
    
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
