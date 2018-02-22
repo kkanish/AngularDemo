@@ -16,13 +16,18 @@ import { RatingCategoryPipe } from './pipes/rating-category.pipe';
 import { RatingComponent } from './rating/rating.component';
 import  {DataService} from './services/data.service'
 import { HttpModule } from '@angular/http';
+import { AboutComponent } from './about/about.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     CollectionComponent,
     RatingCategoryPipe,
-    RatingComponent
+    RatingComponent,
+    AboutComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,8 @@ import { HttpModule } from '@angular/http';
     MatInputModule,
     MatToolbarModule,
     BrowserAnimationsModule,
-    HttpModule   
+    HttpModule,
+    AppRoutingModule   
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

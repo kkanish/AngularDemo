@@ -3,6 +3,7 @@ import { Ibook } from '../ibook';
 import { MatSnackBar } from '@angular/material';
 import  { DataService}  from '../services/data.service'
 import { Subject} from 'rxjs/Subject'
+
 @Component({
   selector: 'my-collection',
   templateUrl: './collection.component.html',
