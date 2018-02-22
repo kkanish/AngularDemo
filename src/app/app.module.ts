@@ -19,6 +19,7 @@ import { HttpModule } from '@angular/http';
 import { AboutComponent } from './about/about.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AppRoutingModule } from './app-routing.module';
+import { BookDetailComponent } from './book-detail/book-detail.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AppRoutingModule } from './app-routing.module';
     RatingCategoryPipe,
     RatingComponent,
     AboutComponent,
-    TabsComponent
+    TabsComponent,
+    BookDetailComponent
   ],
   imports: [
     BrowserModule,
