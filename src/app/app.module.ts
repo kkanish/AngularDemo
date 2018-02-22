@@ -15,6 +15,7 @@ import { CollectionComponent } from './collection/collection.component';
 import { RatingCategoryPipe } from './pipes/rating-category.pipe';
 import { RatingComponent } from './rating/rating.component';
 import  {DataService} from './services/data.service'
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -36,8 +37,8 @@ import  {DataService} from './services/data.service'
     MatLineModule,
     MatInputModule,
     MatToolbarModule,
-    BrowserAnimationsModule
-   
+    BrowserAnimationsModule,
+    HttpModule   
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
